@@ -3,9 +3,11 @@ import ToggleThemeButton from '@/components/ui/toggle-theme'
 
 export default function Home() {
   return (
-    <div className='w-full flex justify-center'>
+    <div className=''>
       <ToggleThemeButton />
-      <CarouselDemo />
+      <div className='md:flex'>
+        <CarouselDemo />
+      </div>
     </div>
   )
 }
