@@ -19,13 +19,13 @@ export default function ToggleThemeButton() {
 
   return (
     <button
-      className="grid place-content-center border w-8 h-8 rounded-md text-muted-foreground"
+      className="grid h-8 w-8 place-content-center rounded-md border text-muted-foreground"
       onClick={() => setTheme(isDark ? 'light' : 'dark')}
     >
       {isDark ? (
-        <SunIcon className="w-5 h-5" />
+        <SunIcon className="h-5 w-5" />
       ) : (
-        <MoonIcon className="w-5 h-5" />
+        <MoonIcon className="h-5 w-5" />
       )}
     </button>
   );
